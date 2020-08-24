@@ -78,8 +78,8 @@
 
         <!-- 内部依赖 -->
         <dependency>
-            <groupId>com.ikinloop</groupId>
             <artifactId>platform-common-util</artifactId>
+            <groupId>com.lemon</groupId>
             <version>0.1</version>
         </dependency>
 

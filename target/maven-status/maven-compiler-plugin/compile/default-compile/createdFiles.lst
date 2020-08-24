@@ -1,0 +1,8 @@
+com\platform\repo\pg\model\base\BasePlpgsqlModel.class
+com\platform\repo\pg\PlatformRepoPgApplication.class
+com\platform\repo\pg\repo\base\CommonCustomRepository.class
+com\platform\repo\pg\repo\dict\DictAreaCodeRepository.class
+com\platform\repo\pg\model\base\CommonDateModel.class
+com\platform\repo\pg\model\base\BasePlpgsqlModelPK.class
+com\platform\repo\pg\repo\base\impl\CommonCustomRepositoryImpl.class
+com\platform\repo\pg\model\base\CommonModel.class

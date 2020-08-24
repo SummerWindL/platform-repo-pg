@@ -2,7 +2,7 @@ package com.platform.repo.pg.model.base;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.ikinloop.common.util.JsonAdaptor;
+import com.platform.common.util.JsonAdaptor;
 import lombok.Data;
 
 import javax.persistence.Entity;
