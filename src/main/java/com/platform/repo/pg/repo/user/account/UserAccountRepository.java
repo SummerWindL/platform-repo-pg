@@ -19,14 +19,14 @@ public interface UserAccountRepository extends CommonCustomRepository<BasePlpgsq
      * @param in_pwd
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_check(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_check(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel check(String in_acc, String in_pwd);
 
     /**
      * 查询用户信息
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_query(?1, ?2, ?3, ?4, ?5)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_query(?1, ?2, ?3, ?4, ?5)", nativeQuery = true)
     BasePlpgsqlModel query(String in_acc, String in_userid, Integer in_countflag, Integer in_offset, Integer in_pagesize);
 
     /**
@@ -34,7 +34,7 @@ public interface UserAccountRepository extends CommonCustomRepository<BasePlpgsq
      * @param in_acc
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_delete(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_delete(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel deleteUserAccount(String in_acc, String in_userid);
 
     /**
@@ -68,7 +68,7 @@ public interface UserAccountRepository extends CommonCustomRepository<BasePlpgsq
      * @param in_params
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_insert(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17, ?18, ?19, ?20, ?21, ?22, ?23, ?24, ?25, ?26, ?27)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_insert(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17, ?18, ?19, ?20, ?21, ?22, ?23, ?24, ?25, ?26, ?27)", nativeQuery = true)
     BasePlpgsqlModel insertUserAccount(String in_userid,
                                        String in_acc,
                                        String in_pwd,
@@ -128,7 +128,7 @@ public interface UserAccountRepository extends CommonCustomRepository<BasePlpgsq
      * @param in_params
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_update(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17, ?18, ?19, ?20, ?21, ?22, ?23, ?24, ?25, ?26, ?27)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_update(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17, ?18, ?19, ?20, ?21, ?22, ?23, ?24, ?25, ?26, ?27)", nativeQuery = true)
     BasePlpgsqlModel updateUserAccount(String in_userid,
                                        String in_acc,
                                        String in_pwd,
@@ -162,7 +162,7 @@ public interface UserAccountRepository extends CommonCustomRepository<BasePlpgsq
      * @param in_acc
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_user_account_reset_pwd(:in_userid, :in_acc, :in_pwd, :in_salt)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_user_account_reset_pwd(:in_userid, :in_acc, :in_pwd, :in_salt)", nativeQuery = true)
     BasePlpgsqlModel resetUserAccountPwd(
             @Param("in_userid") String in_userid,
             @Param("in_acc") String in_acc,

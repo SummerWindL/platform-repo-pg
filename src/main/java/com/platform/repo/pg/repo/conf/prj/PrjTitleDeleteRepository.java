@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface PrjTitleDeleteRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_prj_title_delete(" +
+	@Query(value= "select * from aix.f_mb_prj_title_delete(" +
 		":in_projectid, " + 
 		":in_titleid" +
 	")", nativeQuery = true)

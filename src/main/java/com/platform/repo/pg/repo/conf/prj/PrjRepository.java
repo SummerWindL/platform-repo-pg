@@ -18,7 +18,7 @@ public interface PrjRepository extends CommonCustomRepository<BasePlpgsqlModel, 
      * @param in_prjectname
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_query(?1, ?2, ?3, ?4, ?5)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_query(?1, ?2, ?3, ?4, ?5)", nativeQuery = true)
     BasePlpgsqlModel queryPrj(String in_prjectid, String in_prjectname, Integer in_countflag, Integer in_offset, Integer in_pagesize);
 
     /**
@@ -28,7 +28,7 @@ public interface PrjRepository extends CommonCustomRepository<BasePlpgsqlModel, 
      * @param in_prjectdesc
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_insert(?1, ?2, ?3)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_insert(?1, ?2, ?3)", nativeQuery = true)
     BasePlpgsqlModel insertPrj(String in_prjectid, String in_prjectname, String in_prjectdesc);
 
 
@@ -39,7 +39,7 @@ public interface PrjRepository extends CommonCustomRepository<BasePlpgsqlModel, 
      * @param in_prjectdesc
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_update(?1, ?2, ?3)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_update(?1, ?2, ?3)", nativeQuery = true)
     BasePlpgsqlModel updatePrj(String in_prjectid, String in_prjectname, String in_prjectdesc);
 
     /**
@@ -47,7 +47,7 @@ public interface PrjRepository extends CommonCustomRepository<BasePlpgsqlModel, 
      * @param in_prjectid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_delete(?1)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_delete(?1)", nativeQuery = true)
     BasePlpgsqlModel deletePrj(String in_prjectid);
 
 }

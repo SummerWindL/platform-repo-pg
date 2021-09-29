@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface PrjUpdateRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_prj_update(" +
+	@Query(value= "select * from aix.f_mb_prj_update(" +
 		":in_projectid, " + 
 		":in_projectname, " + 
 		":in_projectdesc, " + 

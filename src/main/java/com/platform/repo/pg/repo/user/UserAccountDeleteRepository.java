@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface UserAccountDeleteRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_user_account_delete(" +
+	@Query(value= "select * from aix.f_mb_user_account_delete(" +
 		":in_acc, " + 
 		":in_userid" +
 	")", nativeQuery = true)

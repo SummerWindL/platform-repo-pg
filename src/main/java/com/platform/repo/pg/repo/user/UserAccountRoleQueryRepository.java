@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface UserAccountRoleQueryRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_user_account_role_query(" +
+	@Query(value= "select * from aix.f_mb_user_account_role_query(" +
 		":in_userid, " + 
 		":in_roleid, " + 
 		":in_rolename" +

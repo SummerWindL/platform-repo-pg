@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 /**
  * 功能字典表
- * @author: fyw
+ * @author: Advance
  * @date: 2018/8/2
  * @description:
  */
@@ -28,7 +28,7 @@ public interface FunctionMenuRepository extends CommonCustomRepository<BasePlpgs
      * @param in_parentfunctionid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_function_menu_query_nopage(?1, ?2, ?3, ?4)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_function_menu_query_nopage(?1, ?2, ?3, ?4)", nativeQuery = true)
     BasePlpgsqlModel queryFunctionMenuNopage(String in_functionid,
                                              String in_lang,
                                              String in_functionname,
@@ -45,7 +45,7 @@ public interface FunctionMenuRepository extends CommonCustomRepository<BasePlpgs
      * @param in_pagesize
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_function_menu_query(?1, ?2, ?3, ?4, ?5, ?6, ?7)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_function_menu_query(?1, ?2, ?3, ?4, ?5, ?6, ?7)", nativeQuery = true)
     BasePlpgsqlModel queryFunctionMenu(String in_functionid,
                                        String in_lang,
                                        String in_functionname,
@@ -58,7 +58,7 @@ public interface FunctionMenuRepository extends CommonCustomRepository<BasePlpgs
      * 添加功能菜单
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_function_menu_insert(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_function_menu_insert(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)", nativeQuery = true)
     BasePlpgsqlModel inserttFunctionMenu(String in_functionid,
                                          String in_lang,
                                          String in_functionname,
@@ -73,7 +73,7 @@ public interface FunctionMenuRepository extends CommonCustomRepository<BasePlpgs
      * 修改功能菜单
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_function_menu_update(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_function_menu_update(?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)", nativeQuery = true)
     BasePlpgsqlModel updateFunctionMenu(String in_functionid,
                                         String in_lang,
                                         String in_functionname,
@@ -88,7 +88,7 @@ public interface FunctionMenuRepository extends CommonCustomRepository<BasePlpgs
      * 删除功能菜单
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_function_menu_delete(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_function_menu_delete(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel deleteFunctionMenu(String in_functionid,
                                         String in_lang);
 

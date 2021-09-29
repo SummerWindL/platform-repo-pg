@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 /**
  * 角色帐号关联表
- * @author: fyw
+ * @author: Advance
  * @date: 2018/8/1
  * @description:
  */
@@ -18,7 +18,7 @@ public interface RoleGroupAccountRepository extends CommonCustomRepository<BaseP
      * @param in_rolegrpid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_role_group_account_query(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_role_group_account_query(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel queryDxRoleGroupAccount(String in_userid, String in_rolegrpid);
 
     /**
@@ -27,7 +27,7 @@ public interface RoleGroupAccountRepository extends CommonCustomRepository<BaseP
      * @param in_rolegrpidarrayjson
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_role_group_account_save(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_role_group_account_save(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel saveDxRoleGroupAccount(String in_userid, String in_rolegrpidarrayjson);
 
     /**
@@ -36,6 +36,6 @@ public interface RoleGroupAccountRepository extends CommonCustomRepository<BaseP
      * @param in_rolegrpid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_role_group_account_delete(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_role_group_account_delete(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel deleteDxRoleGroupAccount(String in_userid, String in_rolegrpid);
 }

@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * @Description	: 公共自定义Repository
  * @ClassName		: CommonCustomRepository 
- * @author			: Alfred
+ * @author			: Advance
  * @date 			: 2017年4月21日 上午10:45:10 
  * 
  * @param <T>

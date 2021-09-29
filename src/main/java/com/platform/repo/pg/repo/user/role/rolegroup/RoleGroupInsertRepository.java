@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface RoleGroupInsertRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_role_group_insert(" +
+	@Query(value= "select * from aix.f_mb_role_group_insert(" +
 		":in_rolegrpid, " + 
 		":in_rolegrpname" +
 		":in_rolegrpicon" +

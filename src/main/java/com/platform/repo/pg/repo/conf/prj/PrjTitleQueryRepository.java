@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface PrjTitleQueryRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_prj_title_query(" +
+	@Query(value= "select * from aix.f_mb_prj_title_query(" +
 		":in_projectid, " + 
 		":in_countflag, " + 
 		":in_offset, " + 

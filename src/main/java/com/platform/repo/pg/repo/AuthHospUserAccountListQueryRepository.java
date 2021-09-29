@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface AuthHospUserAccountListQueryRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_auth_hosp_user_account_list_query(" +
+	@Query(value= "select * from aix.f_mb_auth_hosp_user_account_list_query(" +
 		":in_userid, " + 
 		":in_hospcode, " + 
 		":in_doctoruserid, " + 

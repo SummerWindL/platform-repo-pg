@@ -17,7 +17,7 @@ public interface PrjTitleRepository extends CommonCustomRepository<BasePlpgsqlMo
      * @param in_prjectid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_title_query(?1, ?2, ?3, ?4)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_title_query(?1, ?2, ?3, ?4)", nativeQuery = true)
     BasePlpgsqlModel queryPrjTitle(String in_prjectid, Integer in_countflag, Integer in_offset, Integer in_pagesize);
 
     /**
@@ -28,7 +28,7 @@ public interface PrjTitleRepository extends CommonCustomRepository<BasePlpgsqlMo
      * @param in_titlelogo
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_title_insert(?1, ?2, ?3, ?4)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_title_insert(?1, ?2, ?3, ?4)", nativeQuery = true)
     BasePlpgsqlModel insertPrjTitle(String in_prjectid, String in_titleid, String in_titlename, String in_titlelogo);
 
     /**
@@ -39,7 +39,7 @@ public interface PrjTitleRepository extends CommonCustomRepository<BasePlpgsqlMo
      * @param in_titlelogo
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_title_update(?1, ?2, ?3, ?4)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_title_update(?1, ?2, ?3, ?4)", nativeQuery = true)
     BasePlpgsqlModel updatePrjTitle(String in_prjectid, String in_titleid, String in_titlename, String in_titlelogo);
 
     /**
@@ -48,7 +48,7 @@ public interface PrjTitleRepository extends CommonCustomRepository<BasePlpgsqlMo
      * @param in_titleid
      * @return
      */
-    @Query(value= "select * from aimb.f_mb_prj_title_delete(?1, ?2)", nativeQuery = true)
+    @Query(value= "select * from aix.f_mb_prj_title_delete(?1, ?2)", nativeQuery = true)
     BasePlpgsqlModel deletePrjTitle(String in_prjectid, String in_titleid);
 
 }

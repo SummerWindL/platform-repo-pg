@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface UserAccountQueryRepository extends CommonCustomRepository<BasePlpgsqlModel, Integer> {
 
-	@Query(value= "select * from aimb.f_mb_user_account_query(" +
+	@Query(value= "select * from aix.f_mb_user_account_query(" +
 		":in_acc, " + 
 		":in_userid, " + 
 		":in_hospcode, " + 
